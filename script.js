@@ -1,5 +1,6 @@
 const myArray = [];
 
+/*
 myArray.push("Hund");
 myArray.push("Katt");
 
@@ -13,22 +14,32 @@ myArray.unshift("Katt");
 myArray.shift();
 
 console.log(myArray.toString());
+*/
 
 //
 //
+const textInput = document.querySelector("#textInput");
+const displayList = document.querySelector("#displayList");
 
 const addBack = document.querySelector("#addBack");
 addBack.addEventListener("click", function (event) {
   event.preventDefault();
 
-  const textInput = document.querySelector("#textInput").value;
+  // Sjekker vi om textInput er utfylt eller ikke. Viss utfylt legg til i listen, viss ikke utfylt vis varsel
+  if (!textInput.value == "") {
+    const textInputValue = textInput.value;
 
-  myArray.push(textInput);
+    myArray.push(textInputValue);
 
-  //console.log(myArray);
+    //console.log(myArray);
+  
+    displayList.textContent = myArray.toString();
 
-  const displayList = document.querySelector("#displayList");
-  displayList.textContent = myArray.toString();
+    textInput.value = "";
+  } else {
+    console.log("Noe gikk galt..");
+  }
+  
 });
 
 const removeBack = document.querySelector("#removeBack");
@@ -39,7 +50,6 @@ removeBack.addEventListener("click", function (event) {
 
   //console.log(myArray);
 
-  const displayList = document.querySelector("#displayList");
   displayList.textContent = myArray.toString();
 });
 
@@ -47,12 +57,17 @@ const addFront = document.querySelector("#addFront");
 addFront.addEventListener("click", function (event) {
   event.preventDefault();
 
-  const textInput = document.querySelector("#textInput").value;
+  if (!textInput == "") {
+    const textInputValue = textInput.value;
 
-  myArray.unshift(textInput);
+    myArray.unshift(textInputValue);
 
-  const displayList = document.querySelector("#displayList");
-  displayList.textContent = myArray.toString();
+    displayList.textContent = myArray.toString();
+
+    textInput.value = "";
+  } else {
+    console.log("Noe gik galt forran..");
+  }
 });
 
 const removeFront = document.querySelector("#removeFront");
@@ -61,7 +76,6 @@ removeFront.addEventListener("click", function (event) {
 
   myArray.shift();
 
-  const displayList = document.querySelector("#displayList");
   displayList.textContent = myArray.toString();
 });
 
