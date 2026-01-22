@@ -1,0 +1,23 @@
+// Array til senere så vi slipper å skrive den manuelt selv om vi trenger den ;)
+/*const dagligvarer = [
+  "Melk",
+  "Brød",
+  "Smør",
+  "Ost",
+  "Yoghurt",
+  "Egg",
+  "Kjøttdeig",
+  "Kylling",
+  "Fiskekaker",
+  "Pølse",
+  "Poteter",
+  "Løk",
+  "Rømme",
+  "Fløte",
+  "Grønnsåpe",
+  "Blåbær",
+  "Jordbær",
+  "Eplejuice",
+  "Sjokolade",
+  "Kjeks",
+];*/

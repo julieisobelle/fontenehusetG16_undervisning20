@@ -1,0 +1,142 @@
+/* -- VARIABLES --  */
+:root {
+  /* Farge variabler */
+  --primaryColor: #fcc388ff; /* Peach */
+  --secondaryColor: #ffc5c9ff; /* Tea rose red*/
+  --accentColor: #ffffd1ff; /* Cream */
+  --accentColorTwo: #fee5d0ff; /* Champagne pink*/
+  --accentColorThree: #fff6edff; /* Seashell */
+
+  /* Størrelse variabler */
+  --smallSpace: 8px;
+  --mediumSpace: 16px;
+  --largeSpace: 24px;
+  --fullScreen: 100svh;
+
+  /* Skrift variabler */
+  --fontFamily: "Roboto";
+  --fontSize: 18px;
+}
+
+/* -- GLOBAL -- */
+* {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+/* -- HEADER -- */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  border-bottom: 1px solid seagreen;
+  box-shadow: 2px 2px 20px 2px seagreen;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+.logo {
+  height: 32px;
+  width: 32px;
+  background-color: white;
+}
+
+/* NAV */
+.navList {
+  display: flex;
+  gap: 16px;
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+/* -- MAIN -- */
+main {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(46, 139, 86, 0.656);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  padding: 8px;
+
+  background-color: white;
+  border: 1px solid gray;
+  box-shadow: 2px 2px 20px 2px seagreen;
+}
+
+/* Dynamic list */
+.dynamicList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.textInput {
+  width: 100%;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 21.44px; /*Costum fro H1 at top*/
+}
+
+ul {
+  padding-inline-start: 0;
+}
+
+/* -- FOOTER -- */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid seagreen;
+  box-shadow: 2px 2px 20px 2px seagreen;
+  padding: 16px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  color: black;
+}
+
+/* -- MEDIA -- */
+@media (max-width: 769px) {
+  .section {
+    width: 300px;
+  }
+  .shoppingInput {
+    width: 150px;
+  }
+  .shoppingButton {
+    width: 75px;
+  }
+
+  .shoppingList {
+    width: 300px; /* To fit inside section */
+  }
+}

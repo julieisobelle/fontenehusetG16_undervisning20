@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <!-- Head = informasjon til nettleseren -->
+    <title>Hjem</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+
+  <body>
+    <!-- Body = innhold til nettsiden -->
+    <header class="header">
+      <img class="logo" alt="Placeholder" src="icons/bracket.png" />
+
+      <nav>
+        <ul class="navList">
+          <a href="">
+            <li>Item</li>
+          </a>
+
+          <a href="">
+            <li>Item</li>
+          </a>
+
+          <a href="">
+            <li>Item</li>
+          </a>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section">
+      <form class="dynamicList">
+        <h1>Dynamisk liste</h1>
+        <label for="textInput">
+          Skriv noe her
+          <input
+            type="text"
+            class="textInput"
+            name="textInput"
+            id="textInput"
+            placeholder="Eksempel: Brød, vaske gulv, hund, etc"
+          />
+        </label>
+
+        <div class="buttonContainer">
+          <button id="addFront">Legg til forran</button>
+          <button id="removeFront">Fjern forran</button>
+          <button id="addBack">Legg til bak</button>
+          <button id="removeBack">Fjern bak</button>
+        </div>
+
+        <ul id="displayList">
+        <li class="listItem">Eksempel</li></ul>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <p>Laget av Julie Hauge</p>
+      <a class="contact" href="https://github.com/julieisobelle">
+        <img src="icons/github.png" alt="Placeholder" />
+        <p>Finn meg på github for å se mer</p>
+      </a>
+    </footer>
+  </body>
+</html>
